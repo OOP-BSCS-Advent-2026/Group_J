@@ -72,7 +72,7 @@ public class GroupJ_BusinessSimulator {
 
     public static void printReceipt(String[] items, int[] quantities, double[] subtotals,
                                      boolean[] discountApplied, double grandTotal) {
-        System.out.println("========== RECEIPT ==========");
+        System.out.println("========= RECEIPT =========");
         for (int i = 0; i < items.length; i++) {
             String note = discountApplied[i] ? "(discount applied)" : "(no discount)";
             System.out.println(items[i] + " - qty: " + quantities[i] + " - UGX " + subtotals[i] + " " + note);
