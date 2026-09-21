@@ -10,7 +10,7 @@ public class FlatDiscountItem extends Item {
         this.threshold = threshold;
         this.flatAmount = flatAmount;
     }
-
+    
     //Overriding
     @Override
     public double calculateTotal(int quantity) {
