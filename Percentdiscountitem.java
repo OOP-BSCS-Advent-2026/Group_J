@@ -8,7 +8,7 @@ public class Percentdiscountitem extends Item{
         this.percentOff = percentOff;
     }
     @Override
-    public double calculateTotal(int quantity){A
+    public double calculateTotal(int quantity){
         double subtotal = super.calculateTotal(quantity);
         if(quantity >= threshold) {
             subtotal = subtotal * (1 - percentOff / 100.0);
