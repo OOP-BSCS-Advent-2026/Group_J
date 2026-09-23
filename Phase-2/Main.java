@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         
         Item[] items = {
-            new PercentDiscountItem("Bread", 3500.00, 3, 5),
+            new Percentdiscountitem("Bread", 3500.00, 3, 5),
             new NoDiscountItem("Cake(slice)", 25000.00),
             new FlatDiscountItem("Doughnut", 1000.00, 6, 500),
             new PercentDiscountItem("Cookie", 500.00, 10, 10)
