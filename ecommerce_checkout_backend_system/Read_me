@@ -1,0 +1,27 @@
+E-Commerce Checkout: Payment Processing with Polymorphism
+
+This is a Java project that simulates the payment part of an e-commerce checkout backend.
+It supports credit card and PayPal payments and demonstrates runtime polymorphism (method overriding) together with method overloading
+
+Project Structure
+
+ File                             Description 
+
+ `PaymentProcessor.java`     Parent class. Defines the generic `ProcessPayment` method (two forms) plus shared coupon and validation helpers. 
+ `CreditCardProcessor.java`  Subclass. Overrides `ProcessPayment` with credit card logic (card validation + 2% fee).
+ `PayPalProcessor.java`      Subclass. Overrides `ProcessPayment` with PayPal logic (email validation + 3% fee).
+ `Main.java`                 Checkout simulation that runs both processors through a `PaymentProcessor` reference.
+
+How Polymorphism Is Demonstrated
+
+1. Runtime polymorphism (overriding).** Both subclasses override `ProcessPayment`.
+In `Main`, every object is stored in a `PaymentProcessor` variable, but the object
+is really a `CreditCardProcessor` or `PayPalProcessor`:
+
+Group Members
+
+1. Kavuma Arthur
+2. Lakica Johnson Howard
+3. Oketcho Caleb Jamen
+4. Lulemesha Isaac
+5. Mac Gregor
